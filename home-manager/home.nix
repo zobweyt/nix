@@ -10,16 +10,20 @@
     packages = with pkgs; [
       bat
       eza
+      fastfetch
       htop
       just
       lazygit
       neovim
       nodejs_24
+      onefetch
       pinentry-tty
       pnpm_9
       ripgrep
       tree
+      unzip
       uv
+      zip
     ];
 
     sessionVariables = {
