@@ -18,12 +18,12 @@ in
   programs.fish.enable = true;
   programs.nix-ld.enable = true;
 
-  users.users.nixos.shell = pkgs.fish;
+  users.users.zobweyt.shell = pkgs.fish;
 
   wsl.enable = true;
-  wsl.defaultUser = "nixos";
+  wsl.defaultUser = "zobweyt";
 
-  home-manager.users.nixos = { ... }: {
+  home-manager.users.zobweyt = { ... }: {
     imports = [
       (import (root + "/home-manager/home.nix"))
     ];
