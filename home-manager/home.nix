@@ -36,7 +36,7 @@
   imports = [
     ./programs/fish.nix
     ./programs/git.nix
-    ./programs/gnupg.nix
+    ./programs/gpg.nix
     ./programs/tmux.nix
   ];
 }
