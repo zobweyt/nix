@@ -18,8 +18,6 @@ in
   programs.fish.enable = true;
   programs.nix-ld.enable = true;
 
-  users.users.zobweyt.shell = pkgs.fish;
-
   wsl.enable = true;
   wsl.defaultUser = "zobweyt";
 
@@ -30,6 +28,11 @@ in
   };
 
   virtualisation.docker.enable = true;
+
+  users.users.zobweyt = {
+    shell = pkgs.fish;
+    extraGroups = [ "docker" ];
+  };
 
   # This value determines the NixOS release from which the default
   # settings for stateful data, like file locations and database versions
