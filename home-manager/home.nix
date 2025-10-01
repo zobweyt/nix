@@ -18,7 +18,7 @@
       nodejs_24
       onefetch
       pinentry-tty
-      pnpm_9
+      pnpm_10
       ripgrep
       tree
       unzip
