@@ -16,6 +16,7 @@
       lazygit
       neovim
       nodejs_24
+      nodePackages.vercel
       onefetch
       pinentry-tty
       pnpm_10
