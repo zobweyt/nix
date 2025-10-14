@@ -2,7 +2,7 @@
 
 {
   home.activation.tide = ''
-    ${pkgs.fish}/bin/fish -c "tide configure --auto --style=Lean --prompt_colors='True color' --show_time=No --lean_prompt_height='One line' --prompt_spacing=Sparse --icons='Few icons' --transient=Yes"
+    ${pkgs.fish}/bin/fish -c "tide configure --auto --style=Lean --prompt_colors='True color' --show_time=No --lean_prompt_height='One line' --prompt_spacing=Compact --icons='Few icons' --transient=Yes"
   '';
 
   programs.fish = {
@@ -59,6 +59,13 @@
       # Paths
       fish_add_path "$HOME/.local/bin"
       fish_add_path /opt/homebrew/bin/
+    '';
+
+    interactiveShellInit = ''
+      # Only add newline if previous command wasn't clear
+      function postexec_newline --on-event fish_postexec
+        contains -- $argv[1] c cl clear с сд сдуфк || echo
+      end
     '';
 
     shellAliases = {
