@@ -17,6 +17,7 @@
       neovim
       nodejs_24
       nodePackages.vercel
+      nodePackages."@angular/cli"
       onefetch
       pinentry-tty
       pnpm_10
