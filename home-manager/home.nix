@@ -9,6 +9,7 @@
 
     packages = with pkgs; [
       bat
+      bun
       eza
       fastfetch
       htop
