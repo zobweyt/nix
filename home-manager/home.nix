@@ -9,6 +9,7 @@
 
     packages = with pkgs; [
       bat
+      binutils
       bun
       eza
       fastfetch
