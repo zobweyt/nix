@@ -11,6 +11,7 @@
       bat
       binutils
       bun
+      deno
       eza
       fastfetch
       htop
@@ -18,11 +19,7 @@
       lazygit
       neovim
       nodejs_24
-      nodePackages.vercel
-      nodePackages."@angular/cli"
       onefetch
-      pinentry-tty
-      pnpm_10
       ripgrep
       tree
       unzip
@@ -31,7 +28,7 @@
     ];
 
     sessionVariables = {
-      EDITOR = "nvim";
+      EDITOR = "code";
     };
   };
 
@@ -40,7 +37,6 @@
   imports = [
     ./programs/fish.nix
     ./programs/git.nix
-    ./programs/gpg.nix
     ./programs/tmux.nix
   ];
 }

@@ -16,8 +16,6 @@
     ];
 
     shellInit = ''
-      export GPG_TTY=$(tty)
-
       # Settings
       set -g fish_greeting ""
       

@@ -20,6 +20,7 @@ in
 
   wsl.enable = true;
   wsl.defaultUser = "zobweyt";
+  wsl.interop.register = true;
 
   home-manager.users.zobweyt = { ... }: {
     imports = [
